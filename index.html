@@ -1,13 +1,81 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-  </head>
-  <body>
-    <!-- <div id="app"></div> -->
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link href="src/style.css" rel="stylesheet" />
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+		<title>Devscale Football</title>
+	</head>
+	<body>
+		<!-- <div id="app"></div> -->
+		<!-- Main Body -->
+		<section>
+			<div class="container">
+        <div class="row">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="panel" style="margin-top: 10px;">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Activity Feed</h3>
+                  </div>
+                  <div class="panel-content panel-activity">
+                    <img src="https://sportal365images.com/process/smp-images-production/ringier.africa/08072024/58711843-421d-47c4-a3d3-0ffee0de5912.jpg?operations=fit(480:)" alt="image" width="100%">
+                    <ul class="panel-activity__list" id="CommentData">
+                      
+                      <!-- <div id="CommentData"></div> -->
+                      <!-- <li>
+                        <i class="activity__list__icon fa fa-question-circle-o"></i>
+                        <div class="activity__list__header">
+                          <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt />
+                          <a href="#">John Doe</a>
+                        </div>
+                        <div class="activity__list__body entry-content">
+                          <p>
+                          <strong>Lorem ipsum dolor sit amet</strong>, consectetur adipisicing elit. Voluptatibus ab a nostrum repudiandae dolorem ut quaerat veniam asperiores, rerum voluptatem magni dolores corporis!
+                          <em>Molestiae commodi nesciunt a, repudiandae repellendus ea.</em>
+                          </p>
+                        </div>
+                        <div class="activity__list__footer">
+                          <a href="#" style="color: darkred;"> <i class="fa fa-trash"></i>delete</a>
+                          <span> <i class="fa fa-clock"></i>2 hours ago</span>
+                        </div>
+                      </li> -->
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="panel" style="margin-top: 10px;">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Leave a comment</h3>
+                  </div>
+                  <div class="panel-content panel-activity">
+                    <!-- <form id="formComment" class="panel-activity__status"> -->
+                      <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" class="form-control" id="name">  
+                      </div>
+                      <div class="form-group">
+                        <label for="comment">Comment</label>
+                        <textarea id="comment" name="comment" placeholder="Share what you've been up to..." class="form-control"></textarea>  
+                      </div>
+                      <button id="submitbtn" type="submit" class="btn btn-sm btn-rounded btn-info">Post comment</button>
+                    <!-- </form> -->
+                  </div>
+                </div>
+              </div>
+            </div>            
+          </div>
+        </div>
+			</div>
+		</section>
+		<script type="module" src="/src/main.ts"></script>
+	</body>
 </html>
