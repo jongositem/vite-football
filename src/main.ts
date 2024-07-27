@@ -102,7 +102,7 @@ async function renderData() {
   // })
 }
 // add new data
-const form = document.getElementById('formComment') as HTMLFormElement;
+// const form = document.getElementById('formComment') as HTMLFormElement;
 const inputName = document.getElementById('name') as HTMLInputElement;
 const inputComment = document.getElementById('comment') as HTMLTextAreaElement;
 const submitbtn = document.getElementById('submitbtn');
